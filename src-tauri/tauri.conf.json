@@ -7,10 +7,17 @@
     "withGlobalTauri": true
   },
   "package": {
-    "productName": "test-tauri2-clap",
+    "productName": "test-tauri1-clap",
     "version": "0.1.0"
   },
   "tauri": {
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      }
+    },
     "bundle": {
       "active": true,
       "targets": "all",
@@ -30,15 +37,10 @@
       {
         "fullscreen": false,
         "resizable": true,
-        "title": "test-tauri2-clap",
+        "title": "test-tauri1-clap",
         "width": 800,
         "height": 600
       }
     ]
-  },
-  "plugins": {
-    "shell": {
-      "open": true
-    }
   }
 }

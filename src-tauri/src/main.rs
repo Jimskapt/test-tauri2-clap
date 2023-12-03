@@ -18,8 +18,6 @@ fn main() {
 
     tauri::Builder::default()
         .manage(cli.default_name)
-        .plugin(tauri_plugin_window::init())
-        .plugin(tauri_plugin_shell::init())
         .invoke_handler(tauri::generate_handler![greet, default_name])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
